@@ -1,2 +1,2 @@
-import password from "./"
-module.exports = {}
+import Password from "./src/password.vue"
+export default Password
