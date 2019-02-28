@@ -1,6 +1,6 @@
 {
 	"name": "j-vue-password",
-	"version": "0.5.2",
+	"version": "0.5.3",
 	"description": "j-vue-password is the password component , you can install at npmjs",
 	"main": "index.js",
 	"scripts": {
