@@ -1,6 +1,6 @@
 {
 	"name": "j-vue-password",
-	"version": "0.5.1",
+	"version": "0.5.2",
 	"description": "j-vue-password is the password component , you can install at npmjs",
 	"main": "index.js",
 	"scripts": {
@@ -15,9 +15,14 @@
 		"vue",
 		"vue.js",
 		"password",
-		"vue-component"
+		"vue-component",
+		"h5",
+		"html",
+		"css",
+		"mobile",
+		"pay"
 	],
-	"author": "Li chuanjing",
+	"author": "LiChuanjing",
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/chuanjing/j-vue-password/issues"

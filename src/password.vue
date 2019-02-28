@@ -6,8 +6,14 @@
 				:id="i"
 				v-for="i in length"
 				class="input-box"
-				:style="itemStyle"
-			></li>
+				:style="[itemStyle, { borderColor: getItemColor(i <= strVal.length)}, getBorderRadius(i)]"
+			>
+				<i
+					class="input-box_active"
+					:style="{background: getItemColor(i <= strVal.length)}"
+					v-show="(i <= strVal.length)"
+				></i>
+			</li>
 			<li class="input-core-wrap">
 				<input
 					v-model="val"
@@ -32,12 +38,16 @@
 			},
 			length: {
 				type: Number,
-				default: 8
+				default: 6
 			},
 			"item-style": {
 				type: Object,
 				default: function() {
-					return { width: "50px", height: "50px" }
+					return {
+						width: "50px",
+						height: "50px",
+						background: "#fff"
+					}
 				}
 			},
 			"auto-focus": {
@@ -49,7 +59,25 @@
 			"auto-blur": {
 				type: Boolean,
 				default: function() {
-					return true
+					return false
+				}
+			},
+			"default-color": {
+				type: String,
+				default: function() {
+					return "#ddd"
+				}
+			},
+			"active-color": {
+				type: String,
+				default: function() {
+					return "#BEA473"
+				}
+			},
+			"border-radius": {
+				type: String,
+				default: function() {
+					return "2px"
 				}
 			}
 		},
@@ -73,7 +101,30 @@
 		mounted() {
 			this.autoFocus && this.$refs["inputCore"].focus()
 		},
+		computed: {},
 		methods: {
+			getBorderRadius: function(index = 0) {
+				let { borderRadius, length } = this
+				let borderRadiusStyle = {}
+				if (index === 1) {
+					borderRadiusStyle = {
+						borderBottomLeftRadius: borderRadius,
+						borderTopLeftRadius: borderRadius
+					}
+				}
+				if (index === length) {
+					borderRadiusStyle = {
+						borderBottomRightRadius: borderRadius,
+						borderTopRightRadius: borderRadius
+					}
+				}
+				return borderRadiusStyle
+			},
+			getItemColor: function(isActive = false) {
+				let { defaultColor, activeColor } = this
+				let styles = {}
+				return isActive ? activeColor : defaultColor
+			},
 			reset() {
 				this.val = ""
 				this.strVal = ""
@@ -84,7 +135,6 @@
 		},
 		watch: {
 			val(val, oldVal) {
-				console.log(val, oldVal)
 				if ((val + "").length > this.length) {
 					return
 				}
@@ -133,15 +183,21 @@
 
 	.j-password .input-box:first-child {
 		border-left: 0.01rem solid #ddd;
+		border-bottom-left-radius: 2px;
+		border-top-left-radius: 2px;
+	}
+	.j-password .input-box:nth-last-child(2){
+		border-bottom-right-radius: 2px;
+		border-top-right-radius: 2px;
 	}
 
 	.j-password .input-box.active {
-		border-right: 1px solid #BEA473 !important;
-		border-top: 1px solid #BEA473 !important;
-		border-bottom: 1px solid #BEA473 !important;
+		border-right: 1px solid #BEA473 ;
+		border-top: 1px solid #BEA473 ;
+		border-bottom: 1px solid #BEA473 ;
 	}
 
-	.j-password .input-box.active:after {
+	.j-password .input-box_active {
 		display: block;
 		position: absolute;
 		width: 15px;
@@ -156,7 +212,7 @@
 	}
 
 	.j-password .input-box:first-child.active {
-		border-left: 1px solid #BEA473 !important;
+		border-left: 1px solid #BEA473;
 	}
 
 	.j-password .input-core-wrap {
