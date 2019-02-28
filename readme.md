@@ -2,13 +2,13 @@
 
 The j-vue-password is basic on vue2 .
 
-The github link is https://github.com/chuanjing/j-vue-password;
-The npmjs link is https://www.npmjs.com/package/j-vue-password;
+#### The github link is https://github.com/chuanjing/j-vue-password;
+#### The npmjs link is https://www.npmjs.com/package/j-vue-password;
 
 ### default style 
-
+ ![image](https://github.com/chuanjing/j-vue-password/blob/master/assets/j-vue-password.gif)
 ### custom style
-
+ ![image](https://github.com/chuanjing/j-vue-password/blob/master/assets/custom-password.gif)
 #### How to use ?
 
 ##### Step 1: install the package from npmjs
