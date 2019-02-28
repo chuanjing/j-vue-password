@@ -20,7 +20,13 @@
 		"html",
 		"css",
 		"mobile",
-		"pay"
+		"pay",
+		"identifying code",
+		"code",
+		"密码组件",
+		"密码",
+		"验证码",
+		"验证码组件"
 	],
 	"author": "LiChuanjing",
 	"license": "ISC",
