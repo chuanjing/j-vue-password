@@ -83,10 +83,9 @@ export default {
 | auto-focus    | focus when component mounted           | true                                              |
 | auto-blur     | blur when finished the input           | false                                             |
 | v-model       | bind the value like input element      |                                                   |
-| item-style    | the style for the password item        |                                                   |
-| default-color | the border & circle color when invalid | #ddd                                              |
-| active-color  | the border & circle color when active  |                                                   |
-| border-radius | border-radius                          |                                                   |
+| default-color | the border & circle color when invalid | "#ddd"                                             |
+| active-color  | the border & circle color when active  |   "#BEA473"                                                |
+| border-radius | border-radius                          |   "2px"                                                |
 | item-style    | the style of input box                 | {width: "50px",height:"50px",	background: "#fff"} |
 |               |
 ##### Events
