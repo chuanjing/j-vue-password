@@ -77,17 +77,16 @@ export default {
 #### The props & events
 
 ##### Props
-| props-name    | desc                                   | default                                           |
-| ------------- | -------------------------------------- | ------------------------------------------------- |
-| length        | the length of the password             | 6                                                 |
-| auto-focus    | focus when component mounted           | true                                              |
-| auto-blur     | blur when finished the input           | false                                             |
-| v-model       | bind the value like input element      |                                                   |
-| default-color | the border & circle color when invalid | "#ddd"                                             |
-| active-color  | the border & circle color when active  |   "#BEA473"                                                |
-| border-radius | border-radius                          |   "2px"                                                |
-| item-style    | the style of input box                 | {width: "50px",height:"50px",	background: "#fff"} |
-|               |
+| props-name  | type | desc                                   | default                                           |
+| -------------|------- | -------------------------------------- | ------------------------------------------------- |
+| length        |Number| the length of the password             | 6                                                 |
+| auto-focus    | Boolean | focus when component mounted           | true                                              |
+| auto-blur     |Boolean |blur when finished the input           | false                                             |
+| v-model       |Number |bind the value like input element      |                                                   |
+| default-color |String |the border & circle color when invalid | "#ddd"                                             |
+| active-color  | String|the border & circle color when active  |   "#BEA473"                                                |
+| border-radius | String|border-radius                          |   "2px"                                                |
+| item-style    | Object|the style of input box                 | {width: "50px",height:"50px",	background: "#fff"} |
 ##### Events
 | event-name  | desc                                   | default |
 | ----------- | -------------------------------------- | ------- |
