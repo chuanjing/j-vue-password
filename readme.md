@@ -11,9 +11,9 @@
 | v-model    | bind the value like input element |         |
 ##### Events
 | event-name | desc | default |
-| ---------- | ---- | ------- ||
-| on-changed  | emit the value when the value changed  |         |
-| on-finished | emit the value when the input finished |
+| ---------- | ---- | ------- |
+| on-changed  | emit the value when the value changed  | |
+| on-finished | emit the value when the input finished | |
 
 #### How to use ?
 
