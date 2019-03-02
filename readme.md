@@ -93,4 +93,4 @@ If you find any issue , feel free post it at https://github.com/chuanjing/j-vue-
 ## License
 MIT
 ## Other
-Starred "j-vue-please", if you think it can help you. 
+Starred the "j-vue-please", if it can help you. 
