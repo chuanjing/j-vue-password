@@ -71,9 +71,8 @@ export default {
 }
 </script>
 ```
-## The props & events
 
-### Props
+## Props
 | props-name  | type | desc                                   | default                                           |
 | -------------|------- | -------------------------------------- | ------------------------------------------------- |
 | length        |Number| the length of the password             | 6                                                 |
@@ -84,7 +83,7 @@ export default {
 | active-color  | String|the border & circle color when active  |   "#BEA473"                                                |
 | border-radius | String|border-radius                          |   "2px"                                                |
 | item-style    | Object|the style of input box                 | {width: "50px",height:"50px",	background: "#fff"} |
-### Events
+## Events
 | event-name  | desc                                   | default |
 | ----------- | -------------------------------------- | ------- |
 | on-changed  | emit the value when the value changed  |         |
