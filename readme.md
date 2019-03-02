@@ -1,6 +1,6 @@
 # j-vue-password
 
-The j-vue-password is basic on vue2 .
+The vue password(identifying code) component for H5.
 
 ## Github
 https://github.com/chuanjing/j-vue-password;
@@ -94,4 +94,4 @@ If you find any issue , feel free post it at https://github.com/chuanjing/j-vue-
 ## License
 MIT
 ## Other
-Starred "j-vue-please" , if it help you. 
+Starred "j-vue-please", if you think it can help you. 
