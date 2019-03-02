@@ -30,7 +30,7 @@
 		"支付"
 	],
 	"author": "LiChuanjing",
-	"license": "ISC",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/chuanjing/j-vue-password/issues"
 	},
