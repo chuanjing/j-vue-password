@@ -1,26 +1,24 @@
-### j-vue-password
+# j-vue-password
 
 The j-vue-password is basic on vue2 .
 
-#### The github link is https://github.com/chuanjing/j-vue-password;
-#### The npmjs link is https://www.npmjs.com/package/j-vue-password;
+## Github
+https://github.com/chuanjing/j-vue-password;
+## NPM
+https://www.npmjs.com/package/j-vue-password;
 
-### default style 
+## Default style 
  ![image](https://github.com/chuanjing/j-vue-password/blob/master/assets/j-vue-password.gif)
-### custom style
+## Custom style
  ![image](https://github.com/chuanjing/j-vue-password/blob/master/assets/custom-password.gif)
-#### How to use ?
+## Installation
+```
+npm i j-vue-password
+# or
+cnpm i j-vue-password
+```
 
-##### Step 1: install the package from npmjs
-```
-npm/cnpm i j-vue-password
-```
-
-##### Step 2: import the package into your component
-```
-import Password from "j-vue-password"
-```
-##### Step 3: Below is the demo that how to use j-vue-password.
+## Example
 ```
 <template>
 	<div style="padding: 50px 0;">
@@ -72,11 +70,10 @@ export default {
   },
 }
 </script>
-
 ```
-#### The props & events
+## The props & events
 
-##### Props
+### Props
 | props-name  | type | desc                                   | default                                           |
 | -------------|------- | -------------------------------------- | ------------------------------------------------- |
 | length        |Number| the length of the password             | 6                                                 |
@@ -87,12 +84,14 @@ export default {
 | active-color  | String|the border & circle color when active  |   "#BEA473"                                                |
 | border-radius | String|border-radius                          |   "2px"                                                |
 | item-style    | Object|the style of input box                 | {width: "50px",height:"50px",	background: "#fff"} |
-##### Events
+### Events
 | event-name  | desc                                   | default |
 | ----------- | -------------------------------------- | ------- |
 | on-changed  | emit the value when the value changed  |         |
 | on-finished | emit the value when the input finished |         |
-
-#### Issue
-
+## Issue
 If you find any issue , feel free post it at https://github.com/chuanjing/j-vue-password/issues.
+## License
+MIT
+## Other
+Starred "j-vue-please" , if it help you. 
