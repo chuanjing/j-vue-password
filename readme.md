@@ -3,9 +3,9 @@
 The vue password(identifying code) component for H5.
 
 ## Github
-https://github.com/chuanjing/j-vue-password;
+https://github.com/chuanjing/j-vue-password
 ## NPM
-https://www.npmjs.com/package/j-vue-password;
+https://www.npmjs.com/package/j-vue-password
 
 ## Default style 
  ![image](https://github.com/chuanjing/j-vue-password/blob/master/assets/j-vue-password.gif)
@@ -93,4 +93,4 @@ If you find any issue , feel free post it at https://github.com/chuanjing/j-vue-
 ## License
 MIT
 ## Other
-Starred the "j-vue-please", if it can help you. 
+Starred the "j-vue-password", if it can help you. 
